@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invitación Oficial | Lanzamiento “De la Vergüenza al Propósito”</title>
+  <meta name="description" content="Invitación oficial al lanzamiento del libro De la Vergüenza al Propósito de Mellky Villegas. Reserva tu espacio y confirma por WhatsApp o correo." />
+
+  <style>
+
+    /* Espacio entre la sección anterior y "Redes oficiales" */
+#redes{
+  margin-top: 18px;
+}
+    :root{
+      --bg:#0b0b0f;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.10);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --line: rgba(255,255,255,.14);
+      --gold: #d6b36a;
+      --gold2:#f0d9a3;
+      --shadow: 0 16px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius2: 24px;
+      --max: 1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(214,179,106,.18), transparent 55%),
+        radial-gradient(900px 500px at 80% 0%, rgba(240,217,163,.10), transparent 50%),
+        radial-gradient(1000px 700px at 50% 120%, rgba(255,255,255,.05), transparent 55%),
+        var(--bg);
+      line-height:1.55;
+      letter-spacing:.2px;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:26px 18px 90px;}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      padding:14px 16px; border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border-radius:999px; box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      position:sticky; top:12px; z-index:10;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; min-width: 220px;
+    }
+    .dot{
+      width:12px;height:12px;border-radius:999px;
+      background: radial-gradient(circle at 30% 30%, var(--gold2), var(--gold));
+      box-shadow: 0 0 0 6px rgba(214,179,106,.12);
+    }
+    .brand strong{font-weight:700}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+    .nav{
+      display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end;
+    }
+    .chip{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      padding:8px 10px; border-radius:999px;
+      font-size:13px; color:var(--muted);
+      transition:.2s ease;
+    }
+    .chip:hover{transform:translateY(-1px); background:rgba(255,255,255,.07); color:var(--text)}
+
+    .hero{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1.25fr .95fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 940px){
+      .hero{grid-template-columns:1fr}
+      .brand{min-width:auto}
+    }
+    .card{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+      border-radius:var(--radius2);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(12px);
+    }
+    .hero-left{padding:22px 22px 18px;}
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid rgba(214,179,106,.35);
+      background:rgba(214,179,106,.10);
+      color:var(--gold2);
+      font-size:12px; letter-spacing:.8px;
+      text-transform:uppercase;
+    }
+    h1{
+      margin:14px 0 10px;
+      font-size:42px;
+      line-height:1.08;
+      letter-spacing:-.6px;
+    }
+    @media(max-width:520px){ h1{font-size:34px} }
+    .sub{
+      margin:0 0 16px;
+      color:var(--muted);
+      max-width: 62ch;
+    }
+    .meta{
+      display:grid; grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin:16px 0 18px;
+    }
+    @media(max-width:520px){ .meta{grid-template-columns:1fr} }
+    .meta .pill{
+      padding:12px 12px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.04);
+    }
+    .pill b{display:block; font-size:12px; color:var(--muted); font-weight:600; letter-spacing:.5px; text-transform:uppercase}
+    .pill span{display:block; margin-top:4px; font-size:15px}
+
+    .cta-row{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top: 10px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.05);
+      color:var(--text);
+      font-weight:600;
+      font-size:14px;
+      transition:.2s ease;
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn:hover{transform:translateY(-1px); background:rgba(255,255,255,.08)}
+    .btn-primary{
+      border:1px solid rgba(214,179,106,.55);
+      background: linear-gradient(180deg, rgba(214,179,106,.25), rgba(214,179,106,.12));
+      color: var(--gold2);
+    }
+    .btn-primary:hover{background: linear-gradient(180deg, rgba(214,179,106,.34), rgba(214,179,106,.16))}
+    .btn-solid{
+      border:1px solid rgba(214,179,106,.75);
+      background: radial-gradient(circle at 30% 30%, rgba(240,217,163,.45), rgba(214,179,106,.22));
+      color:#111;
+    }
+    .btn-solid:hover{filter:brightness(1.06)}
+    .fine{
+      font-size:12px; color:var(--muted);
+      margin-top: 10px;
+    }
+
+    .hero-right{
+      display:grid;
+      grid-template-rows: 1fr auto;
+      gap:12px;
+      padding:14px;
+    }
+    .imgbox{
+      border-radius:20px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      position:relative;
+      min-height: 340px;
+      background: rgba(255,255,255,.03);
+    }
+    .imgbox img{
+      width:100%; height:100%;
+      object-fit:cover;
+      display:block;
+      transform: scale(1.02);
+    }
+    .badge{
+      position:absolute; left:14px; top:14px;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.20);
+      background: rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
+      font-size:12px;
+      color: rgba(255,255,255,.88);
+    }
+    .count{
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .count .box{
+      flex:1;
+      min-width: 120px;
+      padding:12px 12px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background: rgba(255,255,255,.04);
+      text-align:center;
+    }
+    .box .n{font-size:22px; font-weight:800}
+    .box .t{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.7px}
+
+    .grid{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:14px;
+    }
+    @media(max-width:920px){ .grid{grid-template-columns:1fr} }
+
+    .section{
+      padding:18px;
+    }
+    .section h2{
+      margin:0 0 10px;
+      font-size:20px;
+      letter-spacing:-.2px;
+    }
+    .section p{margin:0 0 12px; color:var(--muted)}
+    .list{
+      display:grid; gap:10px;
+      margin-top: 10px;
+    }
+    .row{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:12px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(255,255,255,.04);
+    }
+    .ico{
+      width:34px; height:34px; border-radius:12px;
+      border:1px solid rgba(214,179,106,.45);
+      background: rgba(214,179,106,.14);
+      display:flex; align-items:center; justify-content:center;
+      color: var(--gold2);
+      flex: 0 0 auto;
+      font-weight:800;
+    }
+    .row b{display:block; font-size:13px}
+    .row span{display:block; font-size:13px; color:var(--muted); margin-top:2px}
+
+    form{display:grid; gap:10px; margin-top: 10px;}
+    .fields{
+      display:grid; grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media(max-width:720px){ .fields{grid-template-columns:1fr} }
+    label{font-size:12px; color:var(--muted); display:block; margin:0 0 6px}
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(10,10,14,.45);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height: 92px; resize: vertical}
+    input:focus, select:focus, textarea:focus{
+      border-color: rgba(214,179,106,.65);
+      box-shadow: 0 0 0 4px rgba(214,179,106,.10);
+    }
+    .hint{
+      font-size:12px; color:var(--muted);
+      border-top:1px solid var(--line);
+      padding-top: 12px;
+      margin-top: 8px;
+    }
+    .note{
+      padding:12px;
+      border-radius:16px;
+      border:1px dashed rgba(214,179,106,.55);
+      background: rgba(214,179,106,.08);
+      color: rgba(255,255,255,.85);
+      font-size:13px;
+    }
+
+    .footer{
+      margin-top: 10px;
+      padding:16px;
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      background: rgba(255,255,255,.03);
+      text-align:center;
+      color: var(--muted);
+      font-size:13px;
+    }
+
+    .sticky-cta{
+      position:fixed;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:-0px;
+      width:min(var(--max), calc(100% - 24px));
+      padding:12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(10,10,14,.66);
+      backdrop-filter: blur(14px);
+      box-shadow: var(--shadow);
+      display:flex;
+      gap:10px;
+      justify-content:space-between;
+      align-items:center;
+      z-index:20;
+    }
+    .sticky-cta .left{
+      display:flex; flex-direction:column; gap:2px;
+      padding-left:6px;
+    }
+    .sticky-cta .left b{font-size:13px}
+    .sticky-cta .left span{font-size:12px; color:var(--muted)}
+    .sticky-cta .right{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    @media(max-width:720px){
+      .sticky-cta{flex-direction:column; align-items:stretch; border-radius:24px}
+      .sticky-cta .right{justify-content:stretch}
+      .sticky-cta .right .btn{flex:1}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="dot" aria-hidden="true"></div>
+        <div>
+          <strong>Mellky Villegas</strong>
+          <span>Invitación oficial · Lanzamiento de libro</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navegación">
+        <a class="chip" href="#detalles">Detalles</a>
+        <a class="chip" href="#reservar">Reservar</a>
+        <a class="chip" href="#preventa">Preventa</a>
+        <a class="chip" href="#redes">Redes</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+      <div class="card hero-left">
+        <div class="kicker">Evento exclusivo · Cupos limitados</div>
+        <h1>LANZAMIENTO DEL LIBRO<br><span style="color:var(--gold2)">De la Vergüenza al Propósito</span></h1>
+        <p class="sub">
+          Una velada diseñada para celebrar propósito, transformación y nuevos comienzos.
+          Su presencia será parte fundamental de esta noche significativa.
+        </p>
+
+        <div class="meta" id="detalles">
+          <div class="pill">
+            <b>Fecha</b>
+            <span>Jueves 15 de enero, 2026</span>
+          </div>
+          <div class="pill">
+            <b>Hora</b>
+            <span>6:00 p.m.</span>
+          </div>
+          <div class="pill">
+            <b>Lugar</b>
+            <span>Salón de Eventos “Pasión por las Almas”</span>
+          </div>
+          <div class="pill">
+            <b>Ubicación</b>
+            <span>San José, Costa Rica</span>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#reservar">Reservar espacio</a>
+          <a class="btn btn-primary" href="#preventa">Comprar en preventa</a>
+          <a class="btn" href="https://mellkyvillegas.com" target="_blank" rel="noopener">Visitar mellkyvillegas.com</a>
+        </div>
+
+        <p class="fine">
+          Vestimenta: Formal · Ejecutivo · Social. Invitación personal e intransferible.
+        </p>
+      </div>
+
+      <div class="card hero-right">
+        <div class="imgbox" aria-label="Imagen del libro">
+          <span class="badge">Edición especial · Presentación oficial</span>
+          <img src="assets/book-cover.jpg" alt="Portada del libro De la Vergüenza al Propósito">
+        </div>
+
+        <div class="count" aria-label="Cuenta regresiva">
+          <div class="box"><div class="n" id="d">—</div><div class="t">Días</div></div>
+          <div class="box"><div class="n" id="h">—</div><div class="t">Horas</div></div>
+          <div class="box"><div class="n" id="m">—</div><div class="t">Min</div></div>
+          <div class="box"><div class="n" id="s">—</div><div class="t">Seg</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card section">
+        <h2>Información clave</h2>
+        <p>Todo lo necesario para asistir con claridad y elegancia.</p>
+
+        <div class="list">
+          <div class="row">
+            <div class="ico">1</div>
+            <div>
+              <b>Ingreso por invitación</b>
+              <span>Evento con acceso controlado y cupos limitados.</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="ico">2</div>
+            <div>
+              <b>RSVP obligatorio</b>
+              <span>Confirma antes del martes 13 de enero, 2026.</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="ico">3</div>
+            <div>
+              <b>Código de vestimenta</b>
+              <span>Formal · Ejecutivo · Social.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card section" id="reservar">
+        <h2>Reservar espacio (RSVP)</h2>
+        <p>Completa el formulario y confirma por WhatsApp y correo.</p>
+
+        <div class="note" id="availabilityNote">
+          Cupos disponibles: <b id="available">—</b> · Límite por reserva: 1 a 4 personas.
+        </div>
+
+        <form id="rsvpForm" novalidate>
+          <div class="fields">
+            <div>
+              <label for="name">Nombre completo</label>
+              <input id="name" name="name" type="text" placeholder="Ej: Ana Rodríguez" required />
+            </div>
+
+            <div>
+              <label for="phone">Teléfono (opcional)</label>
+              <input id="phone" name="phone" type="tel" placeholder="Ej: +506 8XXX XXXX" />
+            </div>
+          </div>
+
+          <div class="fields">
+            <div>
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" placeholder="Ej: invitado@email.com" required />
+            </div>
+
+            <div>
+              <label for="seats">Cantidad de espacios</label>
+              <select id="seats" name="seats" required>
+                <option value="1">1 espacio</option>
+                <option value="2">2 espacios</option>
+                <option value="3">3 espacios</option>
+                <option value="4">4 espacios</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="notes">Mensaje (opcional)</label>
+            <textarea id="notes" name="notes" placeholder="Ej: Confirmo asistencia. Agradezco indicaciones de parqueo."></textarea>
+          </div>
+
+          <div class="cta-row">
+            <button class="btn btn-solid" type="submit">Generar confirmación</button>
+            <button class="btn" type="button" id="resetBtn">Reiniciar cupos (admin)</button>
+          </div>
+
+          <div class="hint" id="result" aria-live="polite" style="display:none"></div>
+        </form>
+      </div>
+
+      <div class="card section" id="preventa">
+        <h2>Preventa del libro (disponible ya)</h2>
+        <p>Solicita la preventa de forma inmediata. Te contactaremos para el proceso de compra y entrega.</p>
+
+        <div class="row" style="margin-top:10px">
+          <div class="ico">★</div>
+          <div>
+            <b>“De la Vergüenza al Propósito”</b>
+            <span>Compra en preventa y asegura tu ejemplar.</span>
+          </div>
+        </div>
+
+        <div class="cta-row" style="margin-top:12px">
+          <a class="btn btn-primary" id="preorderWA" href="#" target="_blank" rel="noopener">Pedir preventa por WhatsApp</a>
+          <a class="btn" id="preorderEmail" href="#">Pedir preventa por correo</a>
+          <a class="btn" href="https://mellkyvillegas.com" target="_blank" rel="noopener">Seguir la página oficial</a>
+        </div>
+
+        <p class="fine">Si Amazon aún no está publicado, esta preventa se gestiona directamente con el equipo.</p>
+      </div>
+    </section>
+
+    <section class="card section" id="redes">
+      <h2>Redes oficiales</h2>
+      <p>Sigue a Mellky Villegas y mantente al tanto de novedades, preventa y eventos.</p>
+
+      <div class="cta-row">
+        <!-- Cambia los links reales abajo -->
+        <a class="btn" href="https://mellkyvillegas.com" target="_blank" rel="noopener">Sitio oficial</a>
+        <a class="btn" href="#" target="_blank" rel="noopener" id="ig">Instagram</a>
+        <a class="btn" href="#" target="_blank" rel="noopener" id="yt">YouTube</a>
+        <a class="btn" href="#" target="_blank" rel="noopener" id="tt">TikTok</a>
+        <a class="btn" href="#" target="_blank" rel="noopener" id="fb">Facebook</a>
+      </div>
+
+      <div class="hint">
+        Sigue las redes sociales para estar al día con nuevas noticias.
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Mellky Villegas · Lanzamiento del libro “De la Vergüenza al Propósito”
+    </footer>
+   <footer class="footer">
+      Sitio creado por Tracy Ramos +506 6420 2291
+    </footer>
+    
+  </div>
+
+  <!-- Barra fija de acción -->
+  <div class="sticky-cta" role="region" aria-label="Acciones rápidas">
+    <div class="left">
+      <b>Confirma tu asistencia</b>
+      <span>RSVP antes del martes 13 de enero, 2026</span>
+      <span>Sitio creado por Tracy Ramos +506 6420 2291</span>
+    </div>
+    <div class="right">
+      <a class="btn btn-solid" href="#reservar">Reservar</a>
+      <a class="btn btn-primary" href="#preventa">Preventa</a>
+      <a class="btn" href="https://wa.me/50687920910" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+
+  <script>
+    // ====== CONFIGURACIÓN ======
+    const EVENT_DATE = new Date("2026-01-15T18:00:00-06:00"); // Costa Rica (UTC-6)
+    const RSVP_DEADLINE = "Martes 13 de enero, 2026";
+    const VENUE = "Salón de Eventos “Pasión por las Almas”";
+    const CITY = "San José, Costa Rica";
+
+    const WHATSAPP_NUMBER = "50687920910";
+    const EMAIL_TO = "mvillegasv1201@gmail.com";
+
+    // Cupos (cámbialo a lo que tú decidas)
+    const TOTAL_CAPACITY = 100; // <-- AJUSTA AQUÍ
+    const STORAGE_KEY = "mellky_event_reserved";
+
+    // ====== UTILIDADES ======
+    const qs = (s) => document.querySelector(s);
+    const pad = (n) => String(n).padStart(2, "0");
+
+    function getReserved(){
+      const v = Number(localStorage.getItem(STORAGE_KEY) || "0");
+      return isNaN(v) ? 0 : v;
+    }
+    function setReserved(v){
+      localStorage.setItem(STORAGE_KEY, String(Math.max(0, v)));
+    }
+    function available(){
+      return Math.max(0, TOTAL_CAPACITY - getReserved());
+    }
+    function updateAvailabilityUI(){
+      qs("#available").textContent = available();
+    }
+
+    // ====== COUNTDOWN ======
+    function tick(){
+      const now = new Date();
+      const diff = EVENT_DATE - now;
+
+      if(diff <= 0){
+        qs("#d").textContent = "00";
+        qs("#h").textContent = "00";
+        qs("#m").textContent = "00";
+        qs("#s").textContent = "00";
+        return;
+      }
+      const totalSeconds = Math.floor(diff / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const mins = Math.floor((totalSeconds % 3600) / 60);
+      const secs = totalSeconds % 60;
+
+      qs("#d").textContent = pad(days);
+      qs("#h").textContent = pad(hours);
+      qs("#m").textContent = pad(mins);
+      qs("#s").textContent = pad(secs);
+    }
+
+    // ====== PREVENTA LINKS ======
+    function buildPreorderLinks(){
+      const textWA =
+        "Hola, deseo comprar el libro en PREVENTA: “De la Vergüenza al Propósito”.%0A" +
+        "Nombre completo:%0A" +
+        "Cantidad de ejemplares:%0A" +
+        "Ciudad:%0A" +
+        "Gracias.";
+
+      qs("#preorderWA").href = `https://wa.me/${WHATSAPP_NUMBER}?text=${textWA}`;
+
+      const subject = encodeURIComponent("Solicitud de preventa – De la Vergüenza al Propósito");
+      const body = encodeURIComponent(
+        "Hola,\n\nDeseo comprar el libro en PREVENTA “De la Vergüenza al Propósito”.\n" +
+        "Nombre completo:\nCantidad de ejemplares:\nCiudad:\n\nGracias."
+      );
+      qs("#preorderEmail").href = `mailto:${EMAIL_TO}?subject=${subject}&body=${body}`;
+    }
+
+    // ====== RSVP FORM ======
+    qs("#rsvpForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = qs("#name").value.trim();
+      const email = qs("#email").value.trim();
+      const phone = qs("#phone").value.trim();
+      const seats = Number(qs("#seats").value);
+      const notes = qs("#notes").value.trim();
+
+      if(!name || !email){
+        alert("Por favor completa Nombre y Correo.");
+        return;
+      }
+
+      const avail = available();
+      if(seats > avail){
+        alert(`No hay suficientes cupos disponibles. Disponibles actualmente: ${avail}`);
+        return;
+      }
+
+      // Reservar (simulado en el navegador)
+      const newReserved = getReserved() + seats;
+      setReserved(newReserved);
+      updateAvailabilityUI();
+
+      // Mensajes para WhatsApp y correo
+      const waText =
+        "Confirmo mi asistencia al lanzamiento del libro “De la Vergüenza al Propósito”.%0A%0A" +
+        `Nombre: ${encodeURIComponent(name)}%0A` +
+        `Correo: ${encodeURIComponent(email)}%0A` +
+        (phone ? `Teléfono: ${encodeURIComponent(phone)}%0A` : "") +
+        `Espacios: ${seats}%0A` +
+        `Evento: Jueves 15 de enero 2026, 6:00 p.m.%0A` +
+        `Lugar: ${encodeURIComponent(VENUE)} – ${encodeURIComponent(CITY)}%0A` +
+        (notes ? `%0AMensaje: ${encodeURIComponent(notes)}` : "") +
+        "%0A%0AGracias.";
+
+      const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
+
+      const subject = encodeURIComponent("Confirmación de asistencia – Lanzamiento del libro");
+      const body = encodeURIComponent(
+        `Confirmo mi asistencia al lanzamiento del libro “De la Vergüenza al Propósito”.\n\n` +
+        `Nombre: ${name}\n` +
+        `Correo: ${email}\n` +
+        (phone ? `Teléfono: ${phone}\n` : "") +
+        `Espacios: ${seats}\n` +
+        `Fecha: Jueves 15 de enero 2026\n` +
+        `Hora: 6:00 p.m.\n` +
+        `Lugar: ${VENUE} – ${CITY}\n` +
+        (notes ? `\nMensaje: ${notes}\n` : "\n") +
+        `\nAgradezco confirmación.`
+      );
+      const mailLink = `mailto:${EMAIL_TO}?subject=${subject}&body=${body}`;
+
+      // Mostrar resultados (mejor que abrir 2 ventanas automáticamente por bloqueos del navegador)
+      const result = qs("#result");
+      result.style.display = "block";
+      result.innerHTML = `
+        <div style="display:grid; gap:10px; margin-top:8px">
+          <b style="color:var(--gold2)">Reserva registrada (local). Ahora confirma por WhatsApp y correo:</b>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="${waLink}" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+            <a class="btn btn-primary" href="${mailLink}">Confirmar por correo</a>
+          </div>
+          <div class="fine">
+            Fecha límite RSVP: ${RSVP_DEADLINE}. Si deseas cupos reales (multiusuario), se integra con Google Sheets o backend.
+          </div>
+        </div>
+      `;
+
+      // Opcional: scroll suave al resultado
+      result.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+
+    // Reinicio (solo para ti mientras pruebas)
+    qs("#resetBtn").addEventListener("click", () => {
+      const ok = confirm("¿Reiniciar cupos reservados en este navegador?");
+      if(!ok) return;
+      setReserved(0);
+      updateAvailabilityUI();
+      const result = qs("#result");
+      result.style.display = "none";
+      qs("#rsvpForm").reset();
+      alert("Cupos reiniciados (solo en este navegador).");
+    });
+
+    // Init
+    buildPreorderLinks();
+    updateAvailabilityUI();
+    tick();
+    setInterval(tick, 1000);
+    qs("#year").textContent = new Date().getFullYear();
+
+    // Redes (deja listo para reemplazar)
+    // Reemplaza los href por los enlaces reales
+    qs("#ig").href = "https://www.instagram.com/mellkyvillegas?igsh=MTQ4eTFtaGtscDQ3dw=="; // <-- pega aquí el IG real
+    qs("#yt").href = "https://youtube.com/@mellkyvillegas2481?si=yVqrv-JlN4S7xNgj";   // <-- pega aquí el YouTube real
+    qs("#tt").href = "https://www.tiktok.com/@mellkyvillegas?_r=1&_t=ZM-92rRxWYKCnz";    // <-- pega aquí el TikTok real
+    qs("#fb").href = "https://www.facebook.com/share/17riJzh8aE/?mibextid=wwXIfr";  // <-- pega aquí el Facebook real
+  </script>
+</body>
+</html>
